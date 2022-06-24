@@ -38,9 +38,9 @@ router.get('/syncprice', async (req, res,) => {
   try {
     let db = req.mongoConnection;
     await getUserByToken(req.headers, db);
-    let result = await updatePriceFreight(db, req.headers.usertoken);
+    updatePriceFreight(db, req.headers.usertoken);
 
-    res.status(200).json(result);
+    res.status(200).json('Serviço em Execução');
   } catch (err) {
     res.status(err && !err.auth ? 400 : 401).json('CEP Inválido');
   }

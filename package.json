@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nodemon --watch ./* --watch ./../lib/* index dev",
     "homolog": "nedemon --watch ./* --watch ./../lib/* index prod",
-    "linuxPrd": "nodemon index prod",
-    "linuxDev": "nodemon index dev"
+    "linuxPrd": "node index prod",
+    "linuxDev": "nodemon index prod"
   },
   "keywords": [],
   "author": "Everton Jackson",

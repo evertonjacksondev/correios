@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { clientSoap, calcFreight, updatePriceFreight } = require('../../../../lib/data/sigepWeb');
-const { getUserByToken } = require('../../../../lib/data/user');
+const { clientSoap, calcFreight, updatePriceFreight } = require('../../../lib/data/sigepWeb');
+const { getUserByToken } = require('../../../lib/data/user');
 
 
 router.get('/consulta/:cep', async (req, res,) => {
@@ -37,7 +37,7 @@ router.get('/prazoEntrega', async (req, res,) => {
 router.get('/syncprice', async (req, res,) => {
   try {
     let db = req.mongoConnection;
-    // await getUserByToken(req.headers, db);
+    await getUserByToken(req.headers, db);
     let result = await updatePriceFreight(db, req.headers.usertoken);
 
     res.status(200).json(result);

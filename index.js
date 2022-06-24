@@ -1,7 +1,7 @@
 const cors = require('cors');
 const express = require('express');
 const app = express();
-const mongoConnect = require('./../lib/db/mongo');
+const mongoConnect = require('./lib/db/mongo');
 const xmlparser = require('express-xml-bodyparser');
 const fileUpload = require('express-fileupload');
 

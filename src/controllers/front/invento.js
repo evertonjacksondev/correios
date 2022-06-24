@@ -1,5 +1,5 @@
 const express = require('express');
-const { getProductInvento } = require('../../../../lib/http/invento');
+const { getProductInvento } = require('../../../lib/http/correio');
 
 const router = express.Router();
 

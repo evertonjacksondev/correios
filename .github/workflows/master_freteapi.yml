@@ -24,8 +24,8 @@ jobs:
       - name: npm install, npm start
         run: |
           npm install
-          npm run start
-     
+          npm run build --if-present
+          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'freteapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_83EFB45CB1B74E8A838B3906B3C761E9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CAB1185CFEE64CB5BDA9976F667A7B9A }}
           package: .

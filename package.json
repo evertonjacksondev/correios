@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch ./* --watch ./../lib/* index dev",
-    "homolog": "nedemon --watch ./* --watch ./../lib/* index prod",
-    "start": "node index prod",
-    "linuxDev": "nodemon index prod"
+    "start": "node index prod"
   },
   "keywords": [],
   "author": "Everton Jackson",

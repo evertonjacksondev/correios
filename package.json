@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --watch ./* --watch ./../lib/* index dev",
     "homolog": "nedemon --watch ./* --watch ./../lib/* index prod",
-    "test": "node index prod",
+    "start": "node index prod",
     "linuxDev": "nodemon index prod"
   },
   "keywords": [],

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node index prod"
+    "start": "node index prod"
   },
   "keywords": [],
   "author": "Everton Jackson",

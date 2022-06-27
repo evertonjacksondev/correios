@@ -33,7 +33,7 @@ app.use(function(req, res, next) {
 require('./src/controllers/index')(app);
 
 
-const port = 2540;
+const port = 443;
 app.listen(port);
 
 console.log('Servidor rodando na porta: ', port);

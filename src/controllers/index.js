@@ -13,3 +13,5 @@ module.exports = app => {
         .filter(file => ((file.indexOf('.')) !== -1 && (file !== 'index.js') ))
         .forEach(file => require(path.resolve(__dirname + '/front', file))(app));
 };
+
+

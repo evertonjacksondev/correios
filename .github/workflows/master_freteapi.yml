@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'freteapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AEEEE5FE70904561A15A1D36A79B4A3C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_732D5494C0734A8EAAC9510E58620975 }}
           package: .

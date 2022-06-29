@@ -4,8 +4,10 @@ const app = express();
 const mongoConnect = require('./lib/db/mongo');
 const xmlparser = require('express-xml-bodyparser');
 const fileUpload = require('express-fileupload');
+const compression = require('compression');
 
 app.use(cors());
+app.use(compression());
 app.use(fileUpload());
 app.use(express.json());
 app.use(xmlparser({trim: false, explicitArray: false}));
